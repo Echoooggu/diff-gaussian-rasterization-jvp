@@ -333,6 +333,10 @@ __forceinline__ __device__ glm::vec4 compute_quat_to_trace_coefficient(
     return coeffs;
 }
 
+__device__ float inverse_sigmoid(float x) {
+    return logf(x / (1.0f - x));
+}
+
 __global__ void compute_trust_region_step(
     const int P, const int max_coeffs,
     const float trust_radius,
