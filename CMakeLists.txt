@@ -139,5 +139,5 @@ target_link_libraries(preprocess_backward_tests PRIVATE CudaRasterizer gtest gte
 # Copy tests/data into build directory
 file(COPY tests/data DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/)
 file(COPY tests/render_data DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/)
-file(COPY tests/backward_render_data DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/)
+# file(COPY tests/backward_render_data DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/)
 
